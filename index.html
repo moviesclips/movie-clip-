@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ClipVault | Premium Video Clip Bundle</title>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>ClipVault - Premium Video Clip Bundle</title>
+
+<meta name="description"
+content="Premium video clip bundle for creators, editors and social media projects.">
 
 <style>
 
@@ -19,341 +25,544 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f6fa;
-    color:#151515;
-    line-height:1.5;
+    font-family:Georgia,"Times New Roman",serif;
+    background:#f5f6fb;
+    color:#17172b;
+    line-height:1.6;
 }
 
 .container{
     width:92%;
-    max-width:1050px;
+    max-width:1100px;
     margin:auto;
 }
+
 
 /* HERO */
 
 .hero{
-    background:linear-gradient(135deg,#10142d,#4b35c8);
+    min-height:760px;
+    padding:55px 0 70px;
+    background:
+    radial-gradient(
+        circle at top right,
+        #5147d9 0%,
+        #322d91 42%,
+        #15183d 100%
+    );
     color:white;
     text-align:center;
-    padding:45px 15px 55px;
 }
 
 .logo{
-    font-size:30px;
-    font-weight:900;
-    letter-spacing:1px;
-    margin-bottom:25px;
+    font-size:34px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:35px;
 }
 
 .offer{
     display:inline-block;
-    background:#ff9f00;
-    padding:10px 22px;
-    border-radius:50px;
-    font-weight:800;
-    margin-bottom:22px;
+    background:#ffab00;
+    color:white;
+    padding:13px 30px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:35px;
 }
 
 .hero h1{
-    font-size:42px;
+    font-size:50px;
     line-height:1.15;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
     max-width:700px;
-    margin:0 auto 20px;
-    font-size:18px;
+    margin:0 auto 28px;
+    font-size:20px;
     opacity:.92;
 }
 
 .price{
-    font-size:48px;
-    font-weight:900;
+    font-size:72px;
+    font-weight:bold;
     margin-top:15px;
 }
 
 .old-price{
-    font-size:19px;
+    font-size:22px;
     text-decoration:line-through;
     opacity:.65;
+    margin-bottom:35px;
 }
 
 .main-btn{
     display:inline-block;
-    background:#20d45a;
-    color:white;
-    text-decoration:none;
     border:0;
+    text-decoration:none;
+    background:#20d05b;
+    color:white;
+    padding:18px 42px;
     border-radius:12px;
-    padding:17px 35px;
-    margin-top:25px;
-    font-size:18px;
-    font-weight:900;
+    font-size:20px;
+    font-family:inherit;
+    font-weight:bold;
     cursor:pointer;
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    transition:.2s;
 }
 
-/* SECTION */
+.main-btn:hover{
+    transform:translateY(-2px);
+}
+
+
+/* SECTIONS */
 
 section{
-    padding:50px 0;
+    padding:70px 0;
 }
 
 .title{
     text-align:center;
-    font-size:30px;
+    font-size:38px;
     margin-bottom:12px;
 }
 
 .subtitle{
     text-align:center;
+    font-size:18px;
     color:#666;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
+
 
 /* FEATURES */
 
 .feature-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:18px;
+    gap:22px;
 }
 
 .feature{
     background:white;
-    padding:28px 20px;
-    border-radius:16px;
+    padding:32px 24px;
     text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
 }
 
 .feature-icon{
-    font-size:42px;
-    margin-bottom:12px;
+    font-size:45px;
+    margin-bottom:10px;
 }
 
 .feature h3{
+    font-size:23px;
     margin-bottom:8px;
 }
+
+.feature p{
+    color:#666;
+}
+
 
 /* GALLERY */
 
 .gallery-section{
-    background:#eef0f7;
+    background:#eef0f8;
 }
 
 .gallery-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    gap:25px;
 }
 
 .gallery-grid img{
     width:100%;
+    height:auto;
     display:block;
-    border-radius:16px;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-/* OFFER */
+
+/* OFFER BOX */
 
 .offer-box{
-    background:linear-gradient(135deg,#171717,#303030);
-    color:white;
-    border-radius:20px;
-    padding:35px 20px;
+    max-width:700px;
+    margin:auto;
     text-align:center;
+    background:white;
+    padding:45px 25px;
+    border-radius:25px;
+    box-shadow:0 10px 35px rgba(0,0,0,.09);
 }
 
 .offer-box h2{
-    font-size:32px;
+    font-size:34px;
+    margin-bottom:10px;
 }
 
-.offer-box .big-price{
-    color:#ffd21c;
-    font-size:48px;
-    font-weight:900;
-    margin:15px 0;
+.offer-box p{
+    color:#666;
 }
+
+.big-price{
+    font-size:65px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
 
 /* PAYMENT */
 
 .payment-section{
-    background:#f5f6fa;
+    background:#171942;
+    color:white;
+}
+
+.payment-section .subtitle{
+    color:#ddd;
 }
 
 .payment-box{
-    max-width:520px;
+    max-width:550px;
     margin:auto;
     background:white;
-    padding:30px 20px;
-    border-radius:20px;
+    color:#17172b;
+    padding:35px 25px;
+    border-radius:25px;
     text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.10);
+    box-shadow:0 12px 40px rgba(0,0,0,.25);
 }
 
 .payment-box h2{
-    font-size:28px;
+    font-size:27px;
 }
 
 .payment-amount{
-    font-size:40px;
-    font-weight:900;
-    margin:10px 0;
+    font-size:55px;
+    font-weight:bold;
+    margin:5px 0 10px;
+}
+
+.payment-box p{
+    color:#666;
+    margin-bottom:20px;
 }
 
 .qr{
-    width:280px;
-    max-width:90%;
     display:block;
+    width:270px;
+    max-width:90%;
     margin:20px auto;
-    border-radius:10px;
+    border-radius:8px;
 }
 
 .upi-id{
-    background:#f1f2f5;
-    padding:14px;
-    border-radius:10px;
-    font-weight:800;
-    margin:15px 0;
-    word-break:break-all;
+    display:inline-block;
+    background:#f0f1f6;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
 .note{
     font-size:14px;
-    color:#666;
-    margin:15px 0;
 }
+
+
+/* PAYMENT FORM */
 
 .payment-form{
     display:none;
-    margin-top:25px;
+    margin-top:30px;
     text-align:left;
+    border-top:1px solid #ddd;
+    padding-top:25px;
 }
 
 .payment-form label{
     display:block;
-    font-weight:700;
-    margin-bottom:6px;
+    font-weight:bold;
+    margin:14px 0 7px;
 }
 
 .payment-form input{
     width:100%;
     padding:14px;
-    border:1px solid #ddd;
-    border-radius:9px;
-    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
     font-size:16px;
+    font-family:inherit;
 }
 
 .submit-btn{
     width:100%;
-    background:#4b35c8;
-    color:white;
-    border:0;
+    margin-top:20px;
     padding:15px;
-    border-radius:9px;
-    font-size:16px;
-    font-weight:800;
+    border:0;
+    border-radius:10px;
+    background:#3157d5;
+    color:white;
+    font-size:17px;
+    font-family:inherit;
+    font-weight:bold;
     cursor:pointer;
-}</style>
+}
+
+
+/* FAQ */
+
+.faq{
+    max-width:800px;
+    margin:15px auto;
+    background:white;
+    padding:24px;
+    border-radius:14px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.faq h3{
+    margin-bottom:6px;
+    font-size:20px;
+}
+
+.faq p{
+    color:#666;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#101126;
+    color:#bbb;
+    text-align:center;
+    padding:30px 15px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .hero{
+        min-height:auto;
+        padding:45px 0 60px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .price{
+        font-size:60px;
+    }
+
+    .title{
+        font-size:32px;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .main-btn{
+        width:90%;
+        font-size:18px;
+        padding:16px 20px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- PART 2 YAHAN SE AAYEGA --><!-- HERO CONTENT -->
+
 <header class="hero">
+
 <div class="container">
 
-<div class="logo">🎬 CLIPVAULT</div>
+<div class="logo">
+🎬 CLIPVAULT
+</div>
 
-<div class="offer">🔥 LIMITED OFFER</div>
+<div class="offer">
+🔥 LIMITED OFFER
+</div>
 
-<h1>8,000+ Premium Video Clips</h1>
+<h1>
+8,000+ Premium Video Clips
+</h1>
 
 <p>
-Ready-to-use video clips for creators,
-editors and social media projects.
+Ready-to-use clips for creators,
+editors and social media content.
 </p>
 
-<div class="price">₹99</div>
+<div class="price">
+₹99
+</div>
 
-<div class="old-price">Regular Price ₹999</div>
+<div class="old-price">
+Regular Price ₹999
+</div>
 
 <a href="#payment" class="main-btn">
 GET INSTANT ACCESS
 </a>
 
 </div>
+
 </header>
 
 
 <!-- FEATURES -->
+
 <section>
 
 <div class="container">
 
-<h2 class="title">What's Inside?</h2>
+<h2 class="title">
+What's Inside?
+</h2>
 
 <p class="subtitle">
-Everything organized in one convenient collection.
+A professionally organized digital clip collection.
 </p>
 
 <div class="feature-grid">
 
 <div class="feature">
-<div class="feature-icon">🎬</div>
-<h3>8,000+ Clips</h3>
-<p>
-A large collection of ready-to-use video content.
-</p>
+
+<div class="feature-icon">
+🎬
 </div>
+
+<h3>
+8,000+ Clips
+</h3>
+
+<p>
+A large collection of video clips
+for eligible creative projects.
+</p>
+
+</div>
+
 
 <div class="feature">
-<div class="feature-icon">📁</div>
-<h3>Well Organized</h3>
-<p>
-Content can be organized into convenient folders.
-</p>
+
+<div class="feature-icon">
+📁
 </div>
+
+<h3>
+Well Organized
+</h3>
+
+<p>
+Content organized into convenient
+categories and folders.
+</p>
+
+</div>
+
 
 <div class="feature">
-<div class="feature-icon">⚡</div>
-<h3>Easy Access</h3>
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>
+Easy Access
+</h3>
+
 <p>
-Access instructions are provided after verification.
+Digital access instructions are
+provided after payment verification.
 </p>
+
 </div>
 
 </div>
+
 </div>
 
 </section>
 
 
-<!-- GALLERY -->
+<!-- BUNDLE PREVIEW -->
+
 <section class="gallery-section">
 
 <div class="container">
 
-<h2 class="title">🎬 Bundle Preview</h2>
+<h2 class="title">
+🎬 Bundle Preview
+</h2>
 
 <p class="subtitle">
-Preview the collection before purchasing.
+Take a look at the collection.
 </p>
 
 <div class="gallery-grid">
 
-<img src="1000533221.png" alt="Bundle Preview 1">
 
-<img src="1000533222.png" alt="Bundle Preview 2">
+<!-- PREVIEW IMAGE 1 -->
 
-<img src="1000533223.png" alt="Bundle Preview 3">
+<img
+src="1000533224.jpg"
+alt="ClipVault Bundle Preview"
+>
 
-<img src="1000533198.png" alt="Bundle Preview 4">
+
+<!-- PREVIEW IMAGE 2 -->
+
+<img
+src="1000533221.jpg"
+alt="ClipVault Bundle Preview"
+>
+
+
+<!-- PREVIEW IMAGE 3 -->
+
+<img
+src="1000533222.jpg"
+alt="ClipVault Bundle Preview"
+>
+
+
+<!-- PREVIEW IMAGE 4 -->
+
+<img
+src="1000533223.jpg"
+alt="ClipVault Bundle Preview"
+>
+
 
 </div>
 
@@ -362,22 +571,32 @@ Preview the collection before purchasing.
 </section>
 
 
-<!-- OFFER -->
+<!-- SPECIAL OFFER -->
+
 <section>
 
 <div class="container">
 
 <div class="offer-box">
 
-<h2>🔥 Special Launch Offer</h2>
+<h2>
+🔥 Special Launch Offer
+</h2>
 
 <p>
-Get access to the complete authorized clip collection.
+Get the complete authorized digital clip collection
+for a one-time payment.
 </p>
 
-<div class="big-price">₹99</div>
+<div class="big-price">
+₹99
+</div>
 
-<p>One-time payment</p>
+<p>
+One-time payment
+</p>
+
+<br>
 
 <a href="#payment" class="main-btn">
 BUY NOW — ₹99
@@ -390,12 +609,18 @@ BUY NOW — ₹99
 </section>
 
 
-<!-- PAYMENT -->
-<section class="payment-section" id="payment">
+<!-- PAYMENT SECTION -->
+
+<section
+class="payment-section"
+id="payment"
+>
 
 <div class="container">
 
-<h2 class="title">💳 UPI Payment</h2>
+<h2 class="title">
+💳 UPI Payment
+</h2>
 
 <p class="subtitle">
 Scan the QR code and complete your ₹99 payment.
@@ -403,28 +628,40 @@ Scan the QR code and complete your ₹99 payment.
 
 <div class="payment-box">
 
-<h2>Pay Only</h2>
+<h2>
+Pay Only
+</h2>
 
-<div class="payment-amount">₹99</div>
+<div class="payment-amount">
+₹99
+</div>
 
 <p>
-Scan using PhonePe, Google Pay, Paytm or another UPI app.
+Scan using PhonePe, Google Pay,
+Paytm or another UPI app.
 </p>
 
+
+<!-- YOUR QR CODE -->
+
 <img
-src="payment-qr.png"
+src="payment-qr.png.png"
 alt="UPI Payment QR Code"
 class="qr"
 >
+
 
 <div class="upi-id">
 UPI ID: Q186760762@ybl
 </div>
 
+
 <p class="note">
-After payment, click the button below and enter your
-transaction details.
+After completing payment, click
+"I HAVE PAID" and submit your
+payment details.
 </p>
+
 
 <button
 class="main-btn"
@@ -441,25 +678,27 @@ class="payment-form"
 id="paymentForm"
 >
 
-<label for="name">
+<label>
 Your Name
 </label>
 
 <input
 type="text"
-id="name"
+id="customerName"
 placeholder="Enter your name"
 >
 
-<label for="utr">
+
+<label>
 UTR / Transaction ID
 </label>
 
 <input
 type="text"
 id="utr"
-placeholder="Enter your UTR number"
+placeholder="Enter your UTR / Transaction ID"
 >
+
 
 <button
 class="submit-btn"
@@ -478,6 +717,7 @@ SUBMIT PAYMENT DETAILS
 
 
 <!-- FAQ -->
+
 <section>
 
 <div class="container">
@@ -486,15 +726,16 @@ SUBMIT PAYMENT DETAILS
 ❓ Frequently Asked Questions
 </h2>
 
-<br>
 
 <div class="faq">
 
-<h3>How will I receive the bundle?</h3>
+<h3>
+How will I receive the bundle?
+</h3>
 
 <p>
-After payment verification, access instructions for the
-authorized digital content will be provided.
+After payment verification, access instructions
+for the authorized digital content will be provided.
 </p>
 
 </div>
@@ -502,7 +743,9 @@ authorized digital content will be provided.
 
 <div class="faq">
 
-<h3>What payment method is available?</h3>
+<h3>
+What payment method is available?
+</h3>
 
 <p>
 UPI payment is currently available.
@@ -513,7 +756,9 @@ UPI payment is currently available.
 
 <div class="faq">
 
-<h3>How long does verification take?</h3>
+<h3>
+How long does verification take?
+</h3>
 
 <p>
 Payment details are checked before access is provided.
@@ -524,20 +769,26 @@ Payment details are checked before access is provided.
 
 <div class="faq">
 
-<h3>Can I get a refund?</h3>
+<h3>
+What type of content is included?
+</h3>
 
 <p>
-Please publish your refund policy before accepting payments.
+The bundle contains digital video material that you
+are authorized to distribute or sell.
 </p>
 
 </div>
+
 
 </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- PART 3 YAHAN SE AAYEGA -->
+    <!-- FOOTER -->
+
 <footer>
 
 <p>
@@ -552,29 +803,31 @@ Digital Content Store
 
 
 <!-- JAVASCRIPT -->
+
 <script>
 
 function showPaymentForm(){
 
     const form =
-        document.getElementById("paymentForm");
+    document.getElementById("paymentForm");
 
     form.style.display = "block";
 
     form.scrollIntoView({
-        behavior:"smooth",
-        block:"center"
+        behavior: "smooth",
+        block: "center"
     });
+
 }
 
 
 function submitPayment(){
 
     const name =
-        document.getElementById("name").value.trim();
+    document.getElementById("customerName").value.trim();
 
     const utr =
-        document.getElementById("utr").value.trim();
+    document.getElementById("utr").value.trim();
 
 
     if(name === ""){
@@ -582,6 +835,7 @@ function submitPayment(){
         alert("Please enter your name.");
 
         return;
+
     }
 
 
@@ -590,16 +844,19 @@ function submitPayment(){
         alert("Please enter your UTR / Transaction ID.");
 
         return;
+
     }
 
 
     alert(
-        "Thank you! Your payment details have been submitted for verification."
+        "Payment details submitted successfully. Your payment will be verified before access is provided."
     );
 
 }
 
 </script>
 
+
 </body>
+
 </html>
